@@ -1,0 +1,32 @@
+09/03/21 16:47
+
+Problem 1 (5 points):
+Script does not print working directory
+Score += 3
+
+Problem 2 (5 points):
+Score += 5
+
+Problem 3 (5 points):
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+
+Problem 4 (10 points):
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+
+Problem 5 (10 points):
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+
+Problem 6 (10 points):
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+
+Problem 7 (5 points):
+Score += 5
+
+Total score: 13/50 = 26.0%
+
+
+Comments:
+	Please push UnixShell1.tar.gz to your repository; the cryptic error messages on problem 3-6 are because the grader needs it to grade those problems.
+
+-------------------------------------------------------------------------------
+
