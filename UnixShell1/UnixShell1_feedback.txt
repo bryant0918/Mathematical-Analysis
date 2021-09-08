@@ -30,3 +30,33 @@ Comments:
 
 -------------------------------------------------------------------------------
 
+09/07/21 11:25
+
+Problem 1 (5 points):
+Script does not print working directory
+Score += 3
+
+Problem 2 (5 points):
+Score += 5
+
+Problem 3 (5 points):
+Score += 5
+
+Problem 4 (10 points):
+Score += 10
+
+Problem 5 (10 points):
+Score += 10
+
+Problem 6 (10 points):
+Score += 10
+
+Problem 7 (5 points):
+Score += 5
+
+Total score: 48/50 = 96.0%
+
+Great job!
+
+-------------------------------------------------------------------------------
+
