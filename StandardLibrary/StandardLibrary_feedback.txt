@@ -1,0 +1,12 @@
+09/10/21 17:25
+
+TypeError while loading 'standard_library.py': sum() missing 1 required positional argument: 'b'
+
+-------------------------------------------------------------------------------
+
+09/10/21 17:47
+
+TypeError while loading 'standard_library.py': sum() missing 1 required positional argument: 'b'
+
+-------------------------------------------------------------------------------
+
