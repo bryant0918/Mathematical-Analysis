@@ -4,7 +4,7 @@ Bryant McArthur
 Math 345
 September 10
 """
-
+import numpy as np
 
 # Problem 1
 def prob1(L):
@@ -92,15 +92,24 @@ def power_set(A):
         (list(sets)): The power set of A as a list of sets.
     """
     import itertools as it
-    
+    """
     n = len(A)
-    mylist = list()
+    mylist = []
     for i in range(n+1):
-        mylist.append(set(it.combinations(A, i)))
+        mylist.append(list(it.combinations(A, i)))
     
     return mylist
+    """
+    ps = [set()]
+    
+    for i in A:
+        newsubsets = [set(z) for z in it.combinations(A,i)]
+        ps.extend(newsubsets)
+    return ps
 
-print(power_set({'a','b','c'}))
+print(power_set({1,2,3}))
+
+
 
 # Problem 5: Implement shut the box.
 def shut_the_box(player, timelimit):
@@ -113,28 +122,77 @@ def shut_the_box(player, timelimit):
     die = [1,2,3,4,5,6]
     roll1 = 0
     roll2 = 0
-    print(roll1)
-    
     start = time.time()
     end = timelimit + time.time()
     
     while time.time() < end:
-        print(mylist)
-        if cl.sum(mylist) <= 6:
+        print("Numbers left: \t", mylist)
+        if np.sum(mylist) <= 6:
             roll1 = rdm.randint(1,6)
-            print(roll1)
+            roll2 = 0
+            print("Roll: \t", roll1)
             
         else:
             roll1 = rdm.randint(1,6)
             roll2 = rdm.randint(1,6)
-            print(cl.sum(roll1, roll2))
+            print("Roll: \t", cl.sum(roll1, roll2))
             
-        break
+        print(roll1, roll2)
+        roll = cl.sum(roll1, roll2)
+        
+        pwrset = power_set(mylist)
+        mybool = False
+        
+        for i in range(len(mylist)):
+            if mylist[i] == roll:
+                mybool = True
+        
+        for i in range(len(pwrset)):
+            if sum(pwrset[i]) == roll:
+                mybool = True
+                break
+        
+        if mybool == False:
+            print("Unlucky roll!")
+            break
+        
+            
+        timeleft = end - time.time()
+        
+        print("Seconds left: \t", (round(timeleft, ndigits = 2)))
+        
+        x = input("Numbers to eliminate: ")
+        y = x.split( )
+        for i in range(len(y)):
+            y[i] = int(y[i])
+        
+        while sum(y) != cl.sum(roll1, roll2):
+            x = input("Invalid input, try again: ")
+            y = x.split( )
+            for i in range(len(y)):
+                y[i] = int(y[i])
+        
+        
+        for i in range(len(y)):
+            mylist.remove(y[i])
+            
+    timeplayed = round(time.time() - start, ndigits = 2)
+    
+    if len(mylist) == 0:
+        print("Score for player ", player, ": ", sum(mylist)," points")
+        print("Time played: ", timeplayed, " seconds")
+        print("Congratulations!! You shut the box!")
+        
+    else:
+        print("Score for player ", player, ": ", sum(mylist)," points")
+        print("Time played: ", timeplayed, " seconds")
+        print("You're a loser!")
+        
     
     return
 
 
-print(shut_the_box("Bryant",20))
+print(shut_the_box("Bryant",60))
     
     
     
