@@ -5,6 +5,12 @@ Math 345
 September 10
 """
 import numpy as np
+import box
+import sys
+import time
+import random as rdm
+import calculator as cl
+import iterable as it
 
 # Problem 1
 def prob1(L):
@@ -60,8 +66,6 @@ def prob2():
         
     return
 
-print(prob2())
-
 # Problem 3
 def hypot(a, b):
     """Calculate and return the length of the hypotenuse of a right triangle.
@@ -91,41 +95,29 @@ def power_set(A):
     Returns:
         (list(sets)): The power set of A as a list of sets.
     """
-    import itertools as it
-    """
-    n = len(A)
-    mylist = []
-    for i in range(n+1):
-        mylist.append(list(it.combinations(A, i)))
+    ps = []
     
-    return mylist
-    """
-    ps = [set()]
-    
-    for i in A:
+    for i in range(len(A)+1):
         newsubsets = [set(z) for z in it.combinations(A,i)]
         ps.extend(newsubsets)
     return ps
-
-print(power_set({1,2,3}))
-
 
 
 # Problem 5: Implement shut the box.
 def shut_the_box(player, timelimit):
     """Play a single game of shut the box."""
-    import time
-    import random as rdm
-    import calculator as cl
     
+    #Define my variables
     mylist = [1,2,3,4,5,6,7,8,9]
-    die = [1,2,3,4,5,6]
     roll1 = 0
     roll2 = 0
     start = time.time()
     end = timelimit + time.time()
+    mybool = False
     
+    #Play the game as long as you have time left on the clock!
     while time.time() < end:
+        """Roll the dice"""
         print("Numbers left: \t", mylist)
         if np.sum(mylist) <= 6:
             roll1 = rdm.randint(1,6)
@@ -137,47 +129,38 @@ def shut_the_box(player, timelimit):
             roll2 = rdm.randint(1,6)
             print("Roll: \t", cl.sum(roll1, roll2))
             
-        print(roll1, roll2)
         roll = cl.sum(roll1, roll2)
         
-        pwrset = power_set(mylist)
-        mybool = False
-        
-        for i in range(len(mylist)):
-            if mylist[i] == roll:
-                mybool = True
-        
-        for i in range(len(pwrset)):
-            if sum(pwrset[i]) == roll:
-                mybool = True
-                break
+        mybool = box.isvalid(roll,mylist) #check the validity of the dice roll.
         
         if mybool == False:
             print("Unlucky roll!")
             break
         
-            
         timeleft = end - time.time()
         
         print("Seconds left: \t", (round(timeleft, ndigits = 2)))
         
+        #Get the input from the user
         x = input("Numbers to eliminate: ")
         y = x.split( )
         for i in range(len(y)):
             y[i] = int(y[i])
         
+        #Check the validity of the input
         while sum(y) != cl.sum(roll1, roll2):
             x = input("Invalid input, try again: ")
             y = x.split( )
             for i in range(len(y)):
                 y[i] = int(y[i])
         
-        
+        #Remove the inputed numbers from the box.
         for i in range(len(y)):
             mylist.remove(y[i])
             
     timeplayed = round(time.time() - start, ndigits = 2)
     
+    """Congratulate or mock the player accordingly"""
     if len(mylist) == 0:
         print("Score for player ", player, ": ", sum(mylist)," points")
         print("Time played: ", timeplayed, " seconds")
@@ -188,12 +171,16 @@ def shut_the_box(player, timelimit):
         print("Time played: ", timeplayed, " seconds")
         print("You're a loser!")
         
-    
     return
-
-
-print(shut_the_box("Bryant",60))
     
+"""Only run the program if the correct 3 arguments are provided."""
+if len(sys.argv) == 3:
+    player = sys.argv[1]
+    timelimit = int(sys.argv[2])
+    shut_the_box(player,timelimit)
+else:
+    print("You didn't provide the correct arguments")
+
     
     
     
