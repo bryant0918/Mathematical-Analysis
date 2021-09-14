@@ -81,8 +81,6 @@ def hypot(a, b):
     
     return (cl.sqrt(cl.sum(cl.product(a,a),cl.product(b,b))))
     
-print(hypot(2,3))
-
 
 # Problem 4
 def power_set(A):
@@ -100,8 +98,6 @@ def power_set(A):
         newsubsets = [set(z) for z in it.combinations(A,i)]
         ps.extend(newsubsets)
     return ps
-
-print(power_set([1,2,3]))
 
 
 # Problem 5: Implement shut the box.
