@@ -10,7 +10,7 @@ import sys
 import time
 import random as rdm
 import calculator as cl
-import iterable as it
+import itertools as it
 
 # Problem 1
 def prob1(L):
@@ -78,7 +78,6 @@ def hypot(a, b):
     Returns:
         The length of the triangle's hypotenuse.
     """
-    import calculator as cl
     
     return (cl.sqrt(cl.sum(cl.product(a,a),cl.product(b,b))))
     
@@ -101,6 +100,8 @@ def power_set(A):
         newsubsets = [set(z) for z in it.combinations(A,i)]
         ps.extend(newsubsets)
     return ps
+
+print(power_set([1,2,3]))
 
 
 # Problem 5: Implement shut the box.
@@ -173,7 +174,7 @@ def shut_the_box(player, timelimit):
         
     return
     
-"""Only run the program if the correct 3 arguments are provided."""
+"""Only run the program if the correct 3 arguments"""
 if len(sys.argv) == 3:
     player = sys.argv[1]
     timelimit = int(sys.argv[2])
