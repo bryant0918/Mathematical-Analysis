@@ -10,3 +10,30 @@ TypeError while loading 'standard_library.py': sum() missing 1 required position
 
 -------------------------------------------------------------------------------
 
+09/15/21 12:26
+
+Problem 1 (5 points):
+Score += 5
+
+Problem 2 (5 points):
+Score += 5
+
+Problem 3 (10 points):
+Score += 10
+
+Problem 4 (10 points):
+Score += 10
+
+Problem 5 (15 points):
+Does not check for invalid input; inputting a number not in the list results in a ValueError
+Score += 10
+
+Code Quality (5 points):
+Score += 5
+
+Total score: 45/50 = 90.0%
+
+Great job!
+
+-------------------------------------------------------------------------------
+
