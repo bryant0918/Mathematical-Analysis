@@ -82,7 +82,6 @@ def prob3():
     plt.show()
     
 
-
 # Problem 4
 def prob4():
     """Plot the functions sin(x), sin(2x), 2sin(x), and 2sin(2x) on the
@@ -152,16 +151,16 @@ def prob5():
     
     #Subplot 1
     ax1 = plt.subplot(121)
-    ax1.plot(data[:,1],data[:,2], 'ko', markersize=.05)
+    ax1.plot(data[:,1],data[:,2], 'k.', markersize=.01)
     plt.axis("equal")
     plt.xlabel("Longitude")
     plt.ylabel("Latitude")
     
     #Subplot 2
     ax2 = plt.subplot(122)
-    ax2.hist(data[:,0], bins = 23, range=[0,24], ec='black')
+    ax2.hist(data[:,0], bins = 24, range=[0,25], ec='black')
     plt.xlabel("Hour of the Day")
-    plt.xlim(0,24)
+    plt.xlim(1,24)
     
     plt.suptitle("Car Crashes in the USA")
     
