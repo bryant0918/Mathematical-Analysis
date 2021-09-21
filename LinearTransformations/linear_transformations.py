@@ -85,15 +85,13 @@ def solar_system(T, x_e, x_m, omega_e, omega_m):
     Pe0 = np.array([x_e,0])
     Pm0 = np.array([x_m,0])
     
-    start = time.perf_counter()
-    final = start + T
-    
     timer = np.linspace(0,T,500)
     
-    
+    #Rotations
     PeT = np.array([rotate(Pe0,t*omega_e) for t in timer]).T
     PmT = np.array([rotate(Pm0 - Pe0,t*omega_m) for t in timer] + PeT.T).T
     
+    """Plot Orbits"""
     plt.plot(PeT[0],PeT[1], 'b-', label="Earth")
     plt.plot(PmT[0],PmT[1], 'tab:orange',label="Moon")
     plt.legend(loc = "lower right")
@@ -138,37 +136,42 @@ def prob3():
     that your figure accurately describes the growth, but avoid values of n
     that lead to execution times of more than 1 minute.
     """
-    
+    #Create Lists
     n_times = [2**n for n in range(1,9)]
     mvtimes = [None] * 8
     mmtimes = [None] * 8
-    print(n_times)
     
+    #Appending time for different n
     for i in range(1,len(n_times)):
-        print("i is ",i)
         v = random_vector(n_times[i])
         A = random_matrix(n_times[i])
+        
+        #Matrix-Vector time
         start = time.perf_counter()
         B = matrix_vector_product(A, v)
         mvtime = time.perf_counter()-start
         mvtimes[i] = mvtime
+        
+        #Matrix-Matrix time
         B = random_matrix(n_times[i])
         start = time.perf_counter()
         C = matrix_matrix_product(A, B)
         mmtime = time.perf_counter() - start
         mmtimes[i] = mmtime
-        
+
+    #Matrix-Vector plot
     ax1 = plt.subplot(121)
     ax1.plot(n_times,mvtimes, 'b.-', linewidth=1.5, markersize=10)
     plt.xlabel("n",fontsize=14)
     plt.ylabel("Seconds", fontsize=14)
     
-    
+    #Matrix-Matrix plot
     ax2 = plt.subplot(122)
     ax2.plot(n_times,mmtimes, '.-',color="orange", linewidth=1.5, markersize=10)
     plt.xlabel("n",fontsize=14)
     plt.ylabel("Seconds", fontsize=14)
     
+    #Set titles
     ax1.set_title("Matrix Vector", fontsize=8)
     ax2.set_title("Matrix Matrix", fontsize=8)
     
@@ -186,15 +189,16 @@ def prob4():
     four sets of execution times on a regular linear scale, and one with all
     four sets of exections times on a log-log scale.
     """
+    #Create lists
     n_times = [2**n for n in range(1,9)]
     mvtimes = [None] * 8
     mmtimes = [None] * 8
     mmdots = [None] * 8
     mvdots = [None] * 8
-    print(n_times)
+    
     
     for i in range(1,len(n_times)):
-        print("i is ",i)
+        
         #Create Matrices and Vectors
         v = random_vector(n_times[i])
         A = random_matrix(n_times[i])
@@ -226,7 +230,7 @@ def prob4():
         
         
         
-        
+    #Linear plot
     ax1 = plt.subplot(121)
     ax1.plot(n_times,mvtimes, 'b.-', linewidth=1.5, markersize=10, label="Matrix-Vector")
     ax1.plot(n_times,mmtimes, '.-',color="orange", linewidth=1.5, markersize=10, label="Matrix-Matrix")
@@ -236,7 +240,7 @@ def prob4():
     plt.xlabel("n",fontsize=14)
     plt.ylabel("Seconds", fontsize=14)
     
-    
+    #Logrithmic Plot
     ax2 = plt.subplot(122)
     ax2.loglog(n_times,mvtimes, 'b.-', linewidth=1.5, markersize=10, label="Matrix-Vector")
     ax2.loglog(n_times,mmtimes, '.-',color="orange", linewidth=1.5, markersize=10, label="Matrix-Vector")
@@ -252,7 +256,7 @@ def prob4():
     plt.tight_layout()
     plt.show()
     
-prob4()
+
 
 if __name__ == "__main__":
     """
@@ -295,6 +299,7 @@ if __name__ == "__main__":
     
     plt.show()
     """
+    pass
     
     
     
