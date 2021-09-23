@@ -28,3 +28,33 @@ Great job!
 
 -------------------------------------------------------------------------------
 
+09/22/21 20:47
+
+Problem 1 (5 points):
+Score += 5
+
+Problem 2 (5 points):
+Score += 5
+
+Problem 3 (5 points):
+Score += 5
+
+Problem 4 (5 points):
+Score += 5
+
+Problem 5 (15 points):
+Latitude/longitude histogram should use pixel markers (',') rather than circle markers ('.' or 'o')
+Score += 14
+
+Problem 6 (10 points):
+Score += 10
+
+Code Quality (5 points):
+Score += 5
+
+Total score: 49/50 = 98.0%
+
+Excellent!
+
+-------------------------------------------------------------------------------
+
