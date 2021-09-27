@@ -232,20 +232,20 @@ def prob4():
         
     #Linear plot
     ax1 = plt.subplot(121)
-    ax1.plot(n_times,mvtimes, 'b.-', linewidth=1.5, markersize=10, label="Matrix-Vector")
-    ax1.plot(n_times,mmtimes, '.-',color="orange", linewidth=1.5, markersize=10, label="Matrix-Matrix")
-    ax1.plot(n_times,mvdots, 'k.-', linewidth=1.5, markersize=10, label="Matrix-Vector dot")
-    ax1.plot(n_times,mmdots, '.-',color="yellow", linewidth=1.5, markersize=10, label="Matrix-Matrix dot")
+    ax1.plot(n_times,mvtimes, 'b.-', linewidth=1.5, markersize=10, label="Matrix-Vector mult")
+    ax1.plot(n_times,mmtimes, '.-',color="orange", linewidth=1.5, markersize=10, label="Matrix-Matrix mult")
+    ax1.plot(n_times,mvdots, 'k.-', linewidth=1.5, markersize=10, label="Matrix-Vector numpy")
+    ax1.plot(n_times,mmdots, '.-',color="yellow", linewidth=1.5, markersize=10, label="Matrix-Matrix numpy")
     ax1.legend(loc="upper left")
     plt.xlabel("n",fontsize=14)
     plt.ylabel("Seconds", fontsize=14)
     
     #Logrithmic Plot
     ax2 = plt.subplot(122)
-    ax2.loglog(n_times,mvtimes, 'b.-', linewidth=1.5, markersize=10, label="Matrix-Vector")
-    ax2.loglog(n_times,mmtimes, '.-',color="orange", linewidth=1.5, markersize=10, label="Matrix-Vector")
-    ax2.plot(n_times,mvdots, 'k.-', linewidth=1.5, markersize=10, label="Matrix-Vector dot")
-    ax2.plot(n_times,mmdots, '.-',color="yellow", linewidth=1.5, markersize=10, label="Matrix-Matrix dot")
+    ax2.loglog(n_times,mvtimes, 'b.-', linewidth=1.5, markersize=10, label="Matrix-Vector mult")
+    ax2.loglog(n_times,mmtimes, '.-',color="orange", linewidth=1.5, markersize=10, label="Matrix-Vector mult")
+    ax2.plot(n_times,mvdots, 'k.-', linewidth=1.5, markersize=10, label="Matrix-Vector numpy")
+    ax2.plot(n_times,mmdots, '.-',color="yellow", linewidth=1.5, markersize=10, label="Matrix-Matrix numpy")
     ax2.legend(loc="upper left")
     plt.xlabel("n",fontsize=14)
     plt.ylabel("Seconds", fontsize=14)
@@ -256,7 +256,7 @@ def prob4():
     plt.tight_layout()
     plt.show()
     
-
+prob4()
 
 if __name__ == "__main__":
     """
