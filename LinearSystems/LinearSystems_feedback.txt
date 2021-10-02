@@ -1,0 +1,37 @@
+10/02/21 09:39
+
+Problem 1 (10 points):
+Score += 10
+
+Problem 2 (10 points):
+Score += 10
+
+Problem 3 (10 points):
+Score += 10
+
+Problem 4 (5 points):
+Score += 5
+
+Problem 5 (5 points):
+prob5(10) failed
+prob5(10) failed
+prob5(100) failed
+prob5(100) failed
+Score += 0
+
+Problem 6 (5 points):
+Score += 5
+
+Code Quality (5 points):
+Score += 5
+
+Total score: 45/50 = 90.0%
+
+Great job!
+
+
+Comments:
+	Avoid running functions outside of if __name__=="__main__" so they don't run if your code is imported
+
+-------------------------------------------------------------------------------
+
