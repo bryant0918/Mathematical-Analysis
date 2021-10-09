@@ -35,3 +35,39 @@ Comments:
 
 -------------------------------------------------------------------------------
 
+10/09/21 11:23
+
+Problem 1 (10 points):
+Score += 10
+
+Problem 2 (10 points):
+Score += 10
+
+Problem 3 (10 points):
+Score += 10
+
+Problem 4 (5 points):
+Score += 5
+
+Problem 5 (5 points):
+prob5(10) failed
+prob5(10) failed
+prob5(100) failed
+prob5(100) failed
+Score += 0
+
+Problem 6 (5 points):
+Score += 5
+
+Code Quality (5 points):
+Some functions, such as lu(), could use more comments
+Score += 4
+
+Total score: 44/50 = 88.0%
+
+
+Comments:
+	Very nice implementation of row pivoting in lu()
+
+-------------------------------------------------------------------------------
+
