@@ -46,7 +46,7 @@ def ref(A):
         
   
 
-A = np.random.randint(1, high=12, size=(3,3))
+#A = np.random.randint(1, high=12, size=(3,3))
 #print(A)
 #print(ref(A))
 
@@ -227,17 +227,24 @@ def prob5(n):
         A ((n**2,n**2) SciPy sparse matrix)
     """
     
-    diagonals = [1,1,-4,1,1]
-    offsets = [-2,-1,0,1,2]
+    diagonals = [1,-4,1]
+    offsets = [-1,0,1]
     
-    A = sparse.diags(diagonals, offsets, shape=(n**2,n**2))
+    B = sparse.diags(diagonals, offsets, shape=(n,n))
+    
+    A = sparse.block_diag([B]*n)
+    
+    A.setdiag(1,-n)
+    A.setdiag(1,n)
+    
     """
     plt.spy(A, markersize=1)
     plt.show()
     """
+    
     return A
 
-prob5(10)
+
 
 
 
@@ -301,7 +308,7 @@ def prob6():
     plt.tight_layout()
     plt.show()
 
-prob6()
+#prob6()
     
     
     
