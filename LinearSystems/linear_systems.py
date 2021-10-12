@@ -14,11 +14,11 @@ from matplotlib import pyplot as plt
 
 
 def first_column_zeros(A):
-  B=np.copy(A)
-  (m,n)=B.shape
-  for i in range(m-1):
-    B[i+1,:]=B[i+1,:]-(B[i+1,0]/B[0,0])*B[0,:]
-  return B
+    B=np.copy(A)
+    (m,n)=B.shape
+    for i in range(m-1):
+      B[i+1,:]=B[i+1,:]-(B[i+1,0]/B[0,0])*B[0,:]
+    return B
 
 # Problem 1
 def ref(A):
@@ -65,10 +65,14 @@ def lu(A):
     U=np.copy(A)
     L=np.identity(len(A))
     (m,n)=A.shape
+    #Iterate through columns
     for j in range(n-1):
+      #If the first entry in the row is zero switch with the row below it.
       if U[j,j]==0:
           U[j,:]=A[j+1,:]
           U[j+1,:]=A[j,:]
+          
+      #iterate through rows
       for i in range(j+1,m):
         L[i,j]=U[i,j]/U[j,j]
         U[i,:]=U[i,:]-L[i,j]*U[j,:]
@@ -227,13 +231,16 @@ def prob5(n):
         A ((n**2,n**2) SciPy sparse matrix)
     """
     
+    #Create B
     diagonals = [1,-4,1]
     offsets = [-1,0,1]
     
     B = sparse.diags(diagonals, offsets, shape=(n,n))
     
+    #Put B in A on the diagonal n times
     A = sparse.block_diag([B]*n)
     
+    #Add ones at offsets -n and n to create the identity going down
     A.setdiag(1,-n)
     A.setdiag(1,n)
     
