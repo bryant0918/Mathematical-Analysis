@@ -1,0 +1,25 @@
+10/16/21 11:13
+
+Problem 1 (21 points):
+Problem 1 incomplete
+Score += 0
+
+Problem 2 (8 points):
+Problem 2 incomplete
+Score += 0
+
+Problem 3 (8 points):
+Problem 3 incomplete
+Score += 0
+
+Problem 4 (8 points):
+Problem 4 incomplete
+Score += 0
+
+Code Quality (5 points):
+Score += 0
+
+Total score: 0/50 = 0.0%
+
+-------------------------------------------------------------------------------
+
