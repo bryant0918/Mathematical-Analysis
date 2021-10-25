@@ -38,7 +38,7 @@ def qr_gram_schmidt(A):
             
     return Q,R
     
-A = np.random.random((6,4))
+A = np.random.randint(-10,10,size=(6,4))
 Q,R = qr_gram_schmidt(A)
 
 
@@ -57,7 +57,7 @@ def abs_det(A):
     diags = np.diag(R)
     B = np.prod(diags)
     
-    return B
+    return abs(B)
 
 
 #Problem 3
