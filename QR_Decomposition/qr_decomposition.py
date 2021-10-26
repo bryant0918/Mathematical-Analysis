@@ -21,7 +21,6 @@ def qr_gram_schmidt(A):
         R ((n,n) ndarray): An upper triangular matrix.
     """
     
-    
     m,n = A.shape
     Q = A.copy()
     R = np.zeros((n,n))
