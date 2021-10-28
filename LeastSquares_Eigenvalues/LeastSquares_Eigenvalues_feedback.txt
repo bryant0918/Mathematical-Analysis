@@ -1,0 +1,38 @@
+10/27/21 22:28
+
+Problem 1 (5 points):
+Score += 5
+
+Problem 2 (5 points):
+Score += 5
+
+Problem 3 (10 points):
+Score += 10
+
+Problem 4 (10 points):
+Score += 10
+
+Problem 5 (5 points):
+Score += 5
+
+Problem 6 (10 points):
+qr_algorithm(A) failed for A =
+[[6 2 4 7 6]
+ [2 2 4 5 4]
+ [4 4 2 7 2]
+ [7 5 7 8 5]
+ [6 4 2 5 2]]
+	Correct response:
+[-4.239+0.j -2.408+0.j  0.387+0.j  2.565+0.j 23.696+0.j]
+	Student response:
+[-4.239+0.j    -0.837-3.298j -0.837+3.298j  0.387+0.j    23.696+0.j   ]
+Score += 5
+
+Code Quality (5 points):
+Some functions could use more comments. Additionally, avoid running functions when the code is imported.
+Score += 2
+
+Total score: 42/50 = 84.0%
+
+-------------------------------------------------------------------------------
+
