@@ -36,3 +36,33 @@ Total score: 42/50 = 84.0%
 
 -------------------------------------------------------------------------------
 
+10/30/21 10:40
+
+Problem 1 (5 points):
+Score += 5
+
+Problem 2 (5 points):
+Score += 5
+
+Problem 3 (10 points):
+Score += 10
+
+Problem 4 (10 points):
+Score += 10
+
+Problem 5 (5 points):
+Score += 5
+
+Problem 6 (10 points):
+Score += 10
+
+Code Quality (5 points):
+Some functions could use more comments. Additionally, don't have functions run when your code is imported.
+Score += 2
+
+Total score: 47/50 = 94.0%
+
+Great job!
+
+-------------------------------------------------------------------------------
+
