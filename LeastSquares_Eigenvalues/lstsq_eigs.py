@@ -39,25 +39,28 @@ def line_fit():
     index for the data in housing.npy. Plot both the data points and the least
     squares line.
     """
+    #Load contents
     contents = np.load("housing.npy")
     xk = contents[0:,0]
     ones = np.ones(len(xk))
     
+    #Create matrices and vectors
     A = np.column_stack((xk, ones))
     b = contents[0:,1]
         
     x = least_squares(A,b)
     
+    #Generate line of best fit
     y = x[0]*xk + x[1]
     
-    
+    #Plot the results
     plt.scatter(xk,b)
     plt.plot(xk,y, 'b-')
     plt.show()
     
         
     
-#line_fit()
+
 
 # Problem 3
 def polynomial_fit():
@@ -65,26 +68,32 @@ def polynomial_fit():
     the year to the housing price index for the data in housing.npy. Plot both
     the data points and the least squares polynomials in individual subplots.
     """
+    #Load contents
     contents = np.load("housing.npy")
     xk = contents[0:,0]
     
+    #Create polynomial A matrix
     A3 = np.vander(xk,4)
     A6 = np.vander(xk,7)
     A9 = np.vander(xk,10)
     A12 = np.vander(xk,13)
     
+    #create vector b
     b = contents[0:,1]
     
+    #Solve for vector x using least squares method
     x3 = la.lstsq(A3,b)[0]
     x6 = la.lstsq(A6,b)[0]
     x9 = la.lstsq(A9,b)[0]
     x12 = la.lstsq(A12,b)[0]
     
+    #Fit the solultion to y
     y3 = [np.matmul(A3[i], x3) for i in range(len(A3))]
     y6 = [np.matmul(A6[i], x6) for i in range(len(A6))]
     y9 = [np.matmul(A9[i], x9) for i in range(len(A9))]
     y12 = [np.matmul(A12[i], x12) for i in range(len(A12))]
     
+    """Plot the Data"""
     ax1 = plt.subplot(221)
     plt.scatter(xk,b, s = 5)
     ax1.plot(xk,y3,'b-', label = "Degree 3")
@@ -119,7 +128,7 @@ def polynomial_fit():
     plt.tight_layout()
     plt.show()
     
-polynomial_fit()
+#polynomial_fit()
     
 
 
@@ -143,13 +152,15 @@ def ellipse_fit():
     plot_ellipse() to plot the ellipse.
     """
     
+    #Load the data
     xk, yk = np.load("ellipse.npy").T
-    
+    #Create function of least squares matrices
     A = np.column_stack((xk**2, xk, xk*yk, yk, yk**2))
     b = np.ones(len(xk))
     
     a,b,c,d,e = la.lstsq(A,b)[0]
     
+    #Plot the results using plot_ellipse function
     plt.scatter(xk,yk, s=5, color='k')
     plot_ellipse(a,b,c,d,e)
     plt.suptitle("Data fitted to ellipse")
@@ -174,6 +185,7 @@ def power_method(A, N=20, tol=1e-12):
     
     m,n = A.shape
     x = np.random.rand(n)
+    #Normalize x
     x = x/la.norm(x)
     for k in range(N):
         y = x
@@ -201,21 +213,25 @@ def qr_algorithm(A, N=50, tol=1e-12):
     
     m,n = A.shape
     S = la.hessenberg(A)
+    #Recombine the QR decomposition of A_k into A_k+1
     for k in range(N):
         Q,R = la.qr(S)
         S = R@Q
+    #Initialize values
     eigs = []
     i = 0
-    
+    #Iterate over the columns of A
     while i < n:
-        if S[i][i] == S[n-1][n-1] or S[i+1][i] < tol:
+        #If S_i is 1x1
+        if S[i][i] == S[n-1][n-1] or abs(S[i+1][i]) < tol:
             eigs.append(S[i][i])
+        #Calculate the eigenvalues of S_i and append
         else:
             b = - (S[1][1] + S[2][2])
             c = la.det([[S[1][1],S[1][2]],[S[2][1],S[2][2]]])
             
-            e1 = (-b + cmath.sqrt(4*c))/(2)
-            e2 = (-b - cmath.sqrt(4*c))/(2)
+            e1 = (-b + cmath.sqrt(b**2 - 4*c))/(2)
+            e2 = (-b - cmath.sqrt(b**2 - 4*c))/(2)
             
             eigs.append(e1)
             eigs.append(e2)
@@ -223,6 +239,4 @@ def qr_algorithm(A, N=50, tol=1e-12):
         i += 1
             
     return eigs
-
-
 
