@@ -66,3 +66,41 @@ Great job!
 
 -------------------------------------------------------------------------------
 
+11/02/21 09:19
+
+Problem 1 (5 points):
+Score += 5
+
+Problem 2 (5 points):
+Score += 5
+
+Problem 3 (10 points):
+Score += 10
+
+Problem 4 (10 points):
+Score += 10
+
+Problem 5 (5 points):
+Score += 5
+
+Problem 6 (10 points):
+qr_algorithm(A) failed for A =
+[[2 5 3 4]
+ [5 4 3 5]
+ [3 3 4 6]
+ [4 5 6 2]]
+	Correct response:
+[-3.743+0.j -2.076+0.j  1.736+0.j 16.083+0.j]
+	Student response:
+[-3.743+0.j -3.743+0.j -2.076+0.j 16.083+0.j]
+Score += 5
+
+Code Quality (5 points):
+Score += 5
+
+Total score: 45/50 = 90.0%
+
+Great job!
+
+-------------------------------------------------------------------------------
+
