@@ -1,0 +1,31 @@
+11/03/21 21:31
+
+Problem 1 (5 points):
+Score += 5
+
+Problem 2 (10 points):
+connectivity() failed for algebraic connectivity
+	Correct response: 1.5857864376269057
+	Student response: 5.000000000000005
+Score += 8
+
+Problem 3 (5 points):
+Score += 5
+
+Problem 4 (10 points):
+TypeError: 'Array' object is not callable
+
+Problem 5 (10 points):
+NotImplementedError: Problem 5 Incomplete
+
+Problem 6 (5 points):
+NotImplementedError: Problem 6 Incomplete
+
+Code Quality (5 points):
+Some functions, such as connectivity(), could use more comments
+Score += 3
+
+Total score: 21/50 = 42.0%
+
+-------------------------------------------------------------------------------
+
