@@ -67,7 +67,7 @@ def connectivity(A, tol=1e-8):
             connected += 1
     
     #Sort the eigenvalues and take the second argument for the algebraic connectivity
-    np.sort(eigs)
+    eigs = np.sort(eigs)
     algcon = eigs[1]
     
     return connected, algcon
