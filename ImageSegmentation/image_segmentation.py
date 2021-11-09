@@ -289,7 +289,7 @@ if __name__ == '__main__':
     A, D = ImageSegmenter("dream_gray.png").adjacency()
     #print(ImageSegmenter("dream_gray.png").cut(A,D))
     #print("A,D", A,D)
-    print(ImageSegmenter("dream.png").segment())
+    #print(ImageSegmenter("dream.png").segment())
     a = np.load("HeartMatrixA.npz")
     d = np.load("HeartMatrixD.npy")
     #print(a,A)
@@ -298,5 +298,5 @@ if __name__ == '__main__':
     #print(np.allclose(A, a))
     #print(np.allclose(D, d))
     #print(ImageSegmenter("monument_gray.png").cut())
-#    ImageSegmenter("monument.png").segment()
+    print(ImageSegmenter("monument.png").segment())
     pass
