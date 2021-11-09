@@ -1,5 +1,6 @@
 # solutions.py
 """Volume 1: The SVD and Image Compression. Solutions File."""
+"""Bryant McArthur"""
 
 import numpy as np
 from scipy import linalg as la
