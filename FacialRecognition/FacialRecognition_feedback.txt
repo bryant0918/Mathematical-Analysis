@@ -1,0 +1,124 @@
+11/19/21 12:42
+
+Problem 1 (5 points):
+Score += 5
+
+Problem 2 (5 points):
+Please label the faces. Also, use the same face for the shifted and unshifted.
+Score += 2
+
+Problem 3 (5 points):
+Please label the eigenfaces
+Score += 3
+
+Problem 4 (10 points):
+Please label the reconstructed faces
+Score += 6
+
+Problem 5 (10 points):
+Score += 10
+
+Problem 6 (10 points):
+Please label
+Score += 8
+
+Code Quality (5 points):
+More comments would be good
+Score += 2
+
+Total score: 36/50 = 72.0%
+
+-------------------------------------------------------------------------------
+
+11/20/21 13:20
+
+Problem 1 (5 points):
+Score += 5
+
+Problem 2 (10 points):
+Label the plots please. Also, use the same index for the original and mean-shifted faces.
+Score += 5
+
+Problem 3 (10 points):
+Label the eigenfaces by their index
+Score += 7
+
+Problem 4 (10 points):
+Label the reconstructions by the value of s used
+Score += 7
+
+Problem 5 (5 points):
+Score += 5
+
+Problem 6 (5 points):
+Score += 5
+
+Code Quality (5 points):
+The functions in FacialRec could use more comments
+Score += 2
+
+Total score: 36/50 = 72.0%
+
+-------------------------------------------------------------------------------
+
+11/23/21 17:31
+
+Problem 1 (5 points):
+Score += 5
+
+Problem 2 (10 points):
+Please label the plots
+Score += 7
+
+Problem 3 (10 points):
+Please label the eigenfaces
+Score += 7
+
+Problem 4 (10 points):
+Please label the reconstructions
+Score += 7
+
+Problem 5 (5 points):
+Score += 5
+
+Problem 6 (5 points):
+Score += 5
+
+Code Quality (5 points):
+Some functions in FacialRec could use more comments
+Score += 3
+
+Total score: 39/50 = 78.0%
+
+-------------------------------------------------------------------------------
+
+12/07/21 18:52
+
+Problem 1 (5 points):
+Score += 5
+
+Problem 2 (10 points):
+Score += 10
+
+Problem 3 (10 points):
+Score += 10
+
+Problem 4 (10 points):
+Original face should be shown alongside reconstructions
+Score += 9
+
+Problem 5 (5 points):
+Score += 5
+
+Problem 6 (5 points):
+Score += 5
+
+Code Quality (5 points):
+Score += 5
+
+Total score: 49/50 = 98.0%
+
+Excellent!
+
+-------------------------------------------------------------------------------
+

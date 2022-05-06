@@ -1,0 +1,76 @@
+01/27/22 17:37
+
+Problem 1 (5 points):
+Score += 5
+
+Problem 2 (5 points):
+prob2(30, 20, 2000, 8000) failed
+	Correct response: 0.03877843223027752
+	Student response: (0.03878102385998226, True, 6)
+prob2(35, 15, 2500, 7500) failed
+	Correct response: 0.009938822516920501
+	Student response: (0.009939095882188465, True, 9)
+Score += 0
+
+Problem 3 (5 points):
+newton() failed to compute a root for f(x) = x^(1/3), x0 = .1, alpha = 0.32
+Score += 3
+
+Problem 4 (5 points):
+Score += 5
+
+Problem 5 (5 points):
+Score += 5
+
+Problem 6 (10 points):
+LinAlgError: Singular matrix
+
+Problem 7 (10 points):
+ValueError: operands could not be broadcast together with shapes (3,) (500,500) 
+
+Code Quality (5 points):
+need to comment every block of code
+Score += 4
+
+Total score: 22/50 = 44.0%
+
+-------------------------------------------------------------------------------
+
+02/01/22 11:27
+
+ModuleNotFoundError while loading 'newtons_method.py': No module named 'autograd'
+
+-------------------------------------------------------------------------------
+
+02/01/22 11:39
+
+Problem 1 (5 points):
+Score += 5
+
+Problem 2 (5 points):
+Score += 5
+
+Problem 3 (5 points):
+Score += 5
+
+Problem 4 (5 points):
+Score += 5
+
+Problem 5 (5 points):
+Score += 5
+
+Problem 6 (10 points):
+Score += 10
+
+Problem 7 (10 points):
+Score += 10
+
+Code Quality (5 points):
+Score += 5
+
+Total score: 50/50 = 100.0%
+
+Excellent!
+
+-------------------------------------------------------------------------------
+

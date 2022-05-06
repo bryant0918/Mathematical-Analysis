@@ -1,0 +1,65 @@
+01/13/22 18:22
+
+Problem 1 (5 points):
+Score += 5
+
+Problem 2 (5 points):
+Score += 5
+
+Problem 3 (5 points):
+up to order 5 should be the first 5 terms of the maclaurin series, not the first five partial sums
+ditto
+Score += 3
+
+Problem 4 (5 points):
+Score += 5
+
+Problem 5 (5 points):
+TypeError: unsupported operand type(s) for @: 'MutableDenseMatrix' and 'NegativeOne'
+
+Problem 6 (10 points):
+Score += 10
+
+Problem 7 (10 points):
+Score += 10
+
+Code Quality (5 points):
+need to comment every problem 
+Score += 4
+
+Total score: 42/50 = 84.0%
+
+-------------------------------------------------------------------------------
+
+01/18/22 10:43
+
+Problem 1 (5 points):
+Score += 5
+
+Problem 2 (5 points):
+Score += 5
+
+Problem 3 (5 points):
+Score += 5
+
+Problem 4 (5 points):
+Score += 5
+
+Problem 5 (5 points):
+Score += 5
+
+Problem 6 (10 points):
+Score += 10
+
+Problem 7 (10 points):
+Score += 10
+
+Code Quality (5 points):
+Score += 5
+
+Total score: 50/50 = 100.0%
+
+Excellent!
+
+-------------------------------------------------------------------------------
+

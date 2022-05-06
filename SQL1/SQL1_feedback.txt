@@ -1,0 +1,89 @@
+03/25/22 18:07
+
+Problem 1 (5 points):
+Score += 5
+
+Problem 2 (5 points):
+Score += 5
+
+Problem 3 (5 points):
+earthquakes_db() failed for new database
+UnboundLocalError: local variable 'cur' referenced before assignment
+
+Problem 4 (10 points):
+UnboundLocalError: local variable 'cur' referenced before assignment
+
+Problem 5 (10 points):
+Score += 10
+
+Problem 6 (10 points):
+Incorrect average magnitude
+Score += 8
+
+Code Quality (5 points):
+Score += 5
+
+Total score: 33/50 = 66.0%
+
+-------------------------------------------------------------------------------
+
+03/29/22 11:10
+
+Problem 1 (5 points):
+Score += 5
+
+Problem 2 (5 points):
+Score += 5
+
+Problem 3 (5 points):
+Score += 5
+
+Problem 4 (10 points):
+Score += 10
+
+Problem 5 (10 points):
+Score += 10
+
+Problem 6 (10 points):
+ProgrammingError: Cannot operate on a closed database.
+
+Code Quality (5 points):
+Score += 5
+
+Total score: 40/50 = 80.0%
+
+
+Comments:
+	we will pull for final SQL1 grades APR 1 at 9AM
+
+-------------------------------------------------------------------------------
+
+03/31/22 22:32
+
+Problem 1 (5 points):
+Score += 5
+
+Problem 2 (5 points):
+Score += 5
+
+Problem 3 (5 points):
+Score += 5
+
+Problem 4 (10 points):
+Score += 10
+
+Problem 5 (10 points):
+Score += 10
+
+Problem 6 (10 points):
+Score += 10
+
+Code Quality (5 points):
+Score += 5
+
+Total score: 50/50 = 100.0%
+
+Excellent!
+
+-------------------------------------------------------------------------------
+

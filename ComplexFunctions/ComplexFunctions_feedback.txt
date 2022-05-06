@@ -1,0 +1,42 @@
+02/19/22 15:31
+
+complex_functions.ipynb has not been modified yet
+
+-------------------------------------------------------------------------------
+
+02/24/22 17:41
+
+complex_functions.ipynb has not been modified yet
+
+-------------------------------------------------------------------------------
+
+03/03/22 18:00
+
+Problem 1 (5 points):
+Score += 5
+
+Problem 2 (5 points):
+Score += 5
+
+Problem 3 (5 points):
+Score += 5
+
+Problem 4 (10 points):
+Score += 10
+
+Problem 5 (10 points):
+Score += 10
+
+Problem 6 (10 points):
+missing a zero on the 100z**2+z zoomed in plot
+Score += 9
+
+Code Quality (5 points):
+Score += 5
+
+Total score: 49/50 = 98.0%
+
+Excellent!
+
+-------------------------------------------------------------------------------
+

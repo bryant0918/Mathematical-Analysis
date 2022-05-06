@@ -1,0 +1,46 @@
+02/10/22 23:04
+
+Problem 1 (10 points):
+Score += 10
+
+Problem 2 (10 points):
+Score += 10
+
+Problem 3 (15 points):
+Score += 15
+
+Problem 4 (10 points):
+r[Dboth lins[Des should trend downward, err should trend downward
+Score += 4
+
+Code Quality (5 points):
+ADD COMMENTS
+Score += 4
+
+Total score: 43/50 = 86.0%
+
+-------------------------------------------------------------------------------
+
+02/15/22 22:42
+
+Problem 1 (10 points):
+Score += 10
+
+Problem 2 (10 points):
+Score += 10
+
+Problem 3 (15 points):
+Score += 15
+
+Problem 4 (10 points):
+Score += 10
+
+Code Quality (5 points):
+Score += 5
+
+Total score: 50/50 = 100.0%
+
+Excellent!
+
+-------------------------------------------------------------------------------
+

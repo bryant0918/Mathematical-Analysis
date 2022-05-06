@@ -21,25 +21,29 @@ def compact_svd(A, tol=1e-6):
         ((r,n) ndarray): The orthonormal matrix V^H in the SVD.
     """
     
+    #Calculate the eigenvalues and eigenvectors of AH@A
     AH = A.conj().T
     eigvals, eigvecs = la.eig(AH@A)
     
     sigmas = []
     
+    #Calculate the singular values of A
     for i in range(len(eigvals)):
         if abs(eigvals[i]) > tol:
             sigmas.append(np.sqrt(eigvals[i]))
             
     sigmas = np.array(sigmas)
     
+    #Sort the singular values
     idx = sigmas.argsort()[::-1]
     sigmas = sigmas[idx]
     eigvecs = eigvecs[:,idx]
     
+    #Keep the right eigenvectors
     r = len(sigmas)
-    
     V = eigvecs[:,:r]
     
+    #Construct U
     U = A@V / sigmas
     
     return U,sigmas,V.conj().T
@@ -51,6 +55,7 @@ def visualize_svd(A):
     on the unit circle and the two standard basis vectors.
     """
     
+    #Make your linspace and unit circle equations
     theta = np.linspace(0,2*np.pi,200)
     for i in range(len(theta)):
         x = np.cos(theta)
@@ -58,11 +63,14 @@ def visualize_svd(A):
     
     S = np.vstack((x,y))
     
+    #Construct E
     E = np.vstack((np.array([1,0]),np.array([0,0]),np.array([0,1])))
     E = E.T
-
+    
+    #Take the SVD of A
     U, sigma, VH = la.svd(A)
     
+    """Plot everything the problem asks for"""
     ax1 = plt.subplot(221)
     plt.plot(S[0],S[1])
     plt.plot(E[0],E[1])
@@ -108,17 +116,22 @@ def svd_approx(A, s):
         (int) The number of entries needed to store the truncated SVD.
     """
     
+    #Take the SVD of A
     U,sig,VH = la.svd(A, full_matrices = False)
     
+    #Ensure s is greater than the rank of A
     if s > np.linalg.matrix_rank(A):
         raise ValueError("s is greater than the rank of A")
         
+    #Keep only s of everything
     sigs = sig[:s]
     Vs = VH[:s,:]
     Us = U[:,:s]
         
+    #Construct approximation matrix
     As = Us @ np.diag(sigs) @ Vs
     
+    #Save the number of entries
     entries = Us.size + sigs.size + Vs.size
     
     return As, entries
@@ -140,16 +153,26 @@ def lowest_rank_approx(A, err):
         (int) The number of entries needed to store the truncated SVD.
     """
     
+    #Take the SVD of A
     U, sig, VH = la.svd(A)
     
-    if err <= sig[-1]:
-        raise ValueError("Error is too small")
+    #Find S
+    s = len(np.where(sig > err)[0])
     
-    i = 0
-    while sig[i] >= err:
-        i += 1
+    #Make sure s is not too large
+    if s == 0:
+        raise ValueError("Error is too large")
         
-    As, entries = svd_approx(A,i-1)
+    #Keep only s of everything
+    Us = U[:,:s]
+    sigs = np.diag(sig)[:s,:s]
+    Vs = VH[:s,:]
+    
+    #Construct S
+    As = Us @ sigs @ Vs
+    
+    #Ssave the number of entries
+    entries = Us.size + sig[:s].size + Vs.size
     
     return As, entries
 
@@ -166,30 +189,37 @@ def compress_image(filename, s):
         s (int): Rank of new image.
     """
     
+    #Scale your image, assume it's gray and save the original size
     image = imread(filename) / 255
     gray = True
-    
     ogsize = image.size
     
+    """If the image is color"""
     if image.ndim == 3:
         gray = False
         
+        #Split it into it's different color layers
         redlayer = image[:,:,0]
         greenlayer = image[:,:,1]
         bluelayer = image[:,:,2]
         
+        #Take the approximation of every color layer
         Ared, redsize = svd_approx(redlayer,s)
         Agreen, greensize = svd_approx(greenlayer, s)
         Ablue, bluesize = svd_approx(bluelayer, s)
         
+        #Save the size
         size = redsize + greensize + bluesize
         
+        #Stack 'em
         As = np.dstack((np.clip(Ared, 0,1),np.clip(Agreen,0,1),np.clip(Ablue,0,1)))
         
-        
+    #This one is really easy
     else:
         As, size = svd_approx(image, s)
+        
     
+    """Plot it"""
     if gray:
         plt.subplot(121)
         plt.imshow(image, cmap = "gray")
@@ -231,8 +261,8 @@ if __name__ == "__main__":
     
     #visualize_svd(A)
     #print(A)
-    #print(lowest_rank_approx(A, .5))
-    compress_image("hubble.jpg",20)
+    #print(lowest_rank_approx(A, .9))
+    #compress_image("hubble.jpg",80)
     
     
     pass

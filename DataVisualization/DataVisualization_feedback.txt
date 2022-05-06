@@ -1,0 +1,91 @@
+12/02/21 11:49
+
+Problem 1 (5 points):
+Score += 5
+
+Problem 2 (5 points):
+Score += 5
+
+Problem 3 (5 points):
+Score += 5
+
+Problem 4 (10 points):
+Add a plot that shows how the magnitudes of earthquakes are distributed
+Score += 7
+
+Problem 5 (10 points):
+Problem 5 incomplete
+Score += 0
+
+Problem 6 (10 points):
+Problem 6 incomplete
+Score += 0
+
+Code Quality (5 points):
+Code could use more comments
+Score += 0
+
+Total score: 22/50 = 44.0%
+
+-------------------------------------------------------------------------------
+
+12/07/21 12:22
+
+Problem 1 (5 points):
+Score += 5
+
+Problem 2 (5 points):
+Score += 5
+
+Problem 3 (5 points):
+Score += 5
+
+Problem 4 (10 points):
+The frequency of different earthquake strengths are not displayed clearly in any of the plots.
+Score += 8
+
+Problem 5 (10 points):
+Problem 5 incomplete
+Score += 0
+
+Problem 6 (10 points):
+Problem 6 incomplete
+Score += 0
+
+Code Quality (5 points):
+Score += 5
+
+Total score: 28/50 = 56.0%
+
+-------------------------------------------------------------------------------
+
+12/11/21 15:01
+
+Problem 1 (5 points):
+Score += 5
+
+Problem 2 (5 points):
+Score += 5
+
+Problem 3 (5 points):
+Score += 5
+
+Problem 4 (10 points):
+The frequency of different earthquake strengths are not displayed clearly in any of the plots.
+Score += 8
+
+Problem 5 (10 points):
+Problem 5 incomplete
+Score += 0
+
+Problem 6 (10 points):
+Problem 6 incomplete
+Score += 0
+
+Code Quality (5 points):
+Score += 5
+
+Total score: 28/50 = 56.0%
+
+-------------------------------------------------------------------------------
+

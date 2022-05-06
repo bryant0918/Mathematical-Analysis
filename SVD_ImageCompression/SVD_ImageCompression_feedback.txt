@@ -1,0 +1,88 @@
+11/10/21 21:05
+
+Problem 1 (10 points):
+Score += 10
+
+Problem 2 (10 points):
+Score += 10
+
+Problem 3 (5 points):
+Score += 5
+
+Problem 4 (5 points):
+lowest_rank_approx() failed with error = 8.89573945065557 (showing ||A - Ahat||_2)
+	Correct response: 8.051465364704537
+	Student response: 8.995739450655568
+lowest_rank_approx() failed with error = 8.039161592500879 (showing ||A - Ahat||_2)
+	Correct response: 5.146036525508651
+	Student response: 8.139161592500878
+Score += 1
+
+Problem 5 (15 points):
+Score += 15
+
+Code Quality (5 points):
+Some functions, such as compact_svd(), could use more comments
+Score += 3
+
+Total score: 44/50 = 88.0%
+
+-------------------------------------------------------------------------------
+
+11/12/21 20:56
+
+Problem 1 (10 points):
+Score += 10
+
+Problem 2 (10 points):
+Score += 10
+
+Problem 3 (5 points):
+Score += 5
+
+Problem 4 (5 points):
+lowest_rank_approx() failed with error = 8.05675819325424 (showing ||A - Ahat||_2)
+	Correct response: 6.189366712369394
+	Student response: 8.15675819325424
+lowest_rank_approx() failed with error = 6.209420674275384 (showing ||A - Ahat||_2)
+	Correct response: 5.460929629699121
+	Student response: 6.309420674275383
+Score += 1
+
+Problem 5 (15 points):
+Score += 15
+
+Code Quality (5 points):
+Some functions, such as compact_svd(), could use more comments
+Score += 3
+
+Total score: 44/50 = 88.0%
+
+-------------------------------------------------------------------------------
+
+11/20/21 13:59
+
+Problem 1 (10 points):
+Score += 10
+
+Problem 2 (10 points):
+Score += 10
+
+Problem 3 (5 points):
+Score += 5
+
+Problem 4 (5 points):
+Score += 5
+
+Problem 5 (15 points):
+Score += 15
+
+Code Quality (5 points):
+Score += 5
+
+Total score: 50/50 = 100.0%
+
+Excellent!
+
+-------------------------------------------------------------------------------
+

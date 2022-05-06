@@ -1,0 +1,125 @@
+03/03/22 18:41
+
+Problems 1-2 (15 points):
+DiGraph() failed to raise a ValueError (no Exception raised)
+Score += 13
+
+Problem 3 (5 points):
+Score += 5
+
+Problem 4 (5 points):
+rank_websites(epsilon=0.81) failed (printing first 20 ranks)
+	Correct response: "['98595', '32791', '28392', '77323', '92715', '26083', '130094', '99464', '12846', '106064', '332', '31328', '86049', '123900', '74923', '119538', '90571', '116900', '139197', '114623']"
+	Student response: "['229957', '220946', '84586', '246001', '34626', '248137', '244131', '243266', '242950', '241478', '230247', '240318', '250739', '251807', '23343', '233123', '232617', '23125', '230629', '247003']"
+rank_websites(epsilon=0.67) failed (printing first 20 ranks)
+	Correct response: "['98595', '32791', '28392', '77323', '92715', '26083', '130094', '99464', '12846', '106064', '332', '31328', '86049', '123900', '74923', '90571', '119538', '116900', '139197', '114623']"
+	Student response: "['229957', '220946', '84586', '246001', '34626', '248137', '244131', '243266', '242950', '241478', '230247', '240318', '250739', '251807', '23343', '233123', '232617', '23125', '230629', '247003']"
+rank_websites(epsilon=0.89) failed (printing first 20 ranks)
+	Correct response: "['98595', '32791', '28392', '77323', '92715', '26083', '130094', '99464', '12846', '106064', '332', '31328', '86049', '123900', '74923', '119538', '90571', '139197', '116900', '114623']"
+	Student response: "['229957', '220946', '84586', '246001', '34626', '248137', '244131', '243266', '242950', '241478', '230247', '240318', '250739', '251807', '23343', '233123', '232617', '23125', '230629', '247003']"
+rank_websites(epsilon=0.05) failed (printing first 20 ranks)
+	Correct response: "['98595', '32791', '178606', '177473', '230247', '96254', '64104', '64624', '203109', '68912', '217557', '6564', '264536', '215281', '252233', '6886', '44750', '159242', '39172', '132166']"
+	Student response: "['229957', '220946', '84586', '246001', '34626', '248137', '244131', '243266', '242950', '241478', '230247', '240318', '250739', '251807', '23343', '233123', '232617', '23125', '230629', '247003']"
+rank_websites(epsilon=0.57) failed (printing first 20 ranks)
+	Correct response: "['98595', '32791', '28392', '77323', '92715', '26083', '130094', '99464', '12846', '106064', '332', '31328', '86049', '123900', '74923', '119538', '90571', '116900', '139197', '114623']"
+	Student response: "['229957', '220946', '84586', '246001', '34626', '248137', '244131', '243266', '242950', '241478', '230247', '240318', '250739', '251807', '23343', '233123', '232617', '23125', '230629', '247003']"
+Score += 0
+
+Problem 5 (10 points):
+TypeError: 'NoneType' object is not subscriptable
+
+Problem 6 (10 points):
+TypeError: 'NoneType' object is not subscriptable
+
+Code Quality (5 points):
+add comments to DiGraph.itersolve()
+Score += 3
+
+Total score: 21/50 = 42.0%
+
+-------------------------------------------------------------------------------
+
+03/10/22 17:30
+
+Problems 1-2 (15 points):
+Score += 15
+
+Problem 3 (5 points):
+Score += 5
+
+Problem 4 (5 points):
+rank_websites(epsilon=0.17) failed (printing first 20 ranks)
+	Correct response: "['98595', '32791', '178606', '64104', '96254', '177473', '230247', '203109', '217557', '68912', '28392', '77323', '92715', '26083', '130094', '99464', '12846', '106064', '332', '31328']"
+	Student response: "['98595', '32791', '28392', '77323', '92715', '26083', '130094', '99464', '12846', '106064', '332', '31328', '86049', '123900', '74923', '119538', '90571', '116900', '139197', '114623']"
+rank_websites(epsilon=0.40) failed (printing first 20 ranks)
+	Correct response: "['98595', '32791', '178606', '64104', '96254', '28392', '77323', '92715', '26083', '130094', '99464', '12846', '106064', '332', '31328', '86049', '123900', '74923', '119538', '90571']"
+	Student response: "['98595', '32791', '28392', '77323', '92715', '26083', '130094', '99464', '12846', '106064', '332', '31328', '86049', '123900', '74923', '119538', '90571', '116900', '139197', '114623']"
+rank_websites(epsilon=0.36) failed (printing first 20 ranks)
+	Correct response: "['98595', '32791', '178606', '64104', '96254', '28392', '77323', '92715', '26083', '130094', '99464', '12846', '106064', '332', '31328', '86049', '123900', '74923', '119538', '90571']"
+	Student response: "['98595', '32791', '28392', '77323', '92715', '26083', '130094', '99464', '12846', '106064', '332', '31328', '86049', '123900', '74923', '119538', '90571', '116900', '139197', '114623']"
+rank_websites(epsilon=0.89) failed (printing first 20 ranks)
+	Correct response: "['98595', '32791', '28392', '77323', '92715', '26083', '130094', '99464', '12846', '106064', '332', '31328', '86049', '123900', '74923', '119538', '90571', '139197', '116900', '114623']"
+	Student response: "['98595', '32791', '28392', '77323', '92715', '26083', '130094', '99464', '12846', '106064', '332', '31328', '86049', '123900', '74923', '119538', '90571', '116900', '139197', '114623']"
+Score += 1
+
+Problem 5 (10 points):
+rank_ncaa_teams("ncaa2010.csv", epsilon=0.31) failed (printing first 20 ranks)
+	Correct response: '[\'BYU\', \'UConn\', \'San Diego State\', \'Coastal Carolina\', \'Kansas\', \'Kentucky\', \'Butler\', \'East Carolina\', \'Kansas State\', \'NJIT\', \'Florida\', \'Stephen F. Austin\', \'Ohio State\', "Saint Mary\'s (CA)", \'VCU\', \'Texas\', \'Duke\', \'Morehead State\', \'UNC\', \'Utah State\']'
+	Student response: '[\'UConn\', \'Kentucky\', \'Louisville\', \'Notre Dame\', \'Florida\', \'BYU\', "St. John\'s (NY)", \'Kansas\', \'VCU\', \'Syracuse\', \'Pitt\', \'Ohio State\', \'UNC\', \'West Virginia\', \'Butler\', \'Duke\', \'Texas\', \'Marquette\', \'San Diego State\', \'Wisconsin\']'
+rank_ncaa_teams("ncaa2010.csv", epsilon=0.14) failed (printing first 20 ranks)
+	Correct response: '[\'Coastal Carolina\', \'San Diego State\', \'NJIT\', \'BYU\', \'Stephen F. Austin\', \'East Carolina\', \'UConn\', \'South Dakota\', \'Bethune-Cookman\', "Saint Mary\'s (CA)", \'Butler\', \'Texas-Arlington\', \'Kansas State\', \'Weber State\', \'Virginia Military Institute\', \'Harvard\', \'Utah Valley\', \'Kansas\', \'Morehead State\', \'McNeese State\']'
+	Student response: '[\'UConn\', \'Kentucky\', \'Louisville\', \'Notre Dame\', \'Florida\', \'BYU\', "St. John\'s (NY)", \'Kansas\', \'VCU\', \'Syracuse\', \'Pitt\', \'Ohio State\', \'UNC\', \'West Virginia\', \'Butler\', \'Duke\', \'Texas\', \'Marquette\', \'San Diego State\', \'Wisconsin\']'
+rank_ncaa_teams("ncaa2010.csv", epsilon=0.53) failed (printing first 20 ranks)
+	Correct response: "['UConn', 'BYU', 'Kentucky', 'San Diego State', 'Kansas', 'Florida', 'Butler', 'Ohio State', 'VCU', 'Notre Dame', 'Texas', 'Kansas State', 'Louisville', 'Duke', 'UNC', 'Wisconsin', 'Coastal Carolina', 'Purdue', 'Arizona', 'Pitt']"
+	Student response: '[\'UConn\', \'Kentucky\', \'Louisville\', \'Notre Dame\', \'Florida\', \'BYU\', "St. John\'s (NY)", \'Kansas\', \'VCU\', \'Syracuse\', \'Pitt\', \'Ohio State\', \'UNC\', \'West Virginia\', \'Butler\', \'Duke\', \'Texas\', \'Marquette\', \'San Diego State\', \'Wisconsin\']'
+rank_ncaa_teams("ncaa2010.csv", epsilon=0.27) failed (printing first 20 ranks)
+	Correct response: '[\'BYU\', \'Coastal Carolina\', \'San Diego State\', \'UConn\', \'East Carolina\', \'NJIT\', \'Butler\', \'Kansas\', \'Stephen F. Austin\', \'Kentucky\', \'Kansas State\', \'Florida\', "Saint Mary\'s (CA)", \'Ohio State\', \'South Dakota\', \'Bethune-Cookman\', \'Morehead State\', \'VCU\', \'Texas\', \'Duke\']'
+	Student response: '[\'UConn\', \'Kentucky\', \'Louisville\', \'Notre Dame\', \'Florida\', \'BYU\', "St. John\'s (NY)", \'Kansas\', \'VCU\', \'Syracuse\', \'Pitt\', \'Ohio State\', \'UNC\', \'West Virginia\', \'Butler\', \'Duke\', \'Texas\', \'Marquette\', \'San Diego State\', \'Wisconsin\']'
+rank_ncaa_teams("ncaa2010.csv", epsilon=0.53) failed (printing first 20 ranks)
+	Correct response: "['UConn', 'BYU', 'Kentucky', 'San Diego State', 'Kansas', 'Florida', 'Butler', 'Ohio State', 'VCU', 'Notre Dame', 'Texas', 'Kansas State', 'Louisville', 'Duke', 'UNC', 'Wisconsin', 'Coastal Carolina', 'Purdue', 'Arizona', 'Pitt']"
+	Student response: '[\'UConn\', \'Kentucky\', \'Louisville\', \'Notre Dame\', \'Florida\', \'BYU\', "St. John\'s (NY)", \'Kansas\', \'VCU\', \'Syracuse\', \'Pitt\', \'Ohio State\', \'UNC\', \'West Virginia\', \'Butler\', \'Duke\', \'Texas\', \'Marquette\', \'San Diego State\', \'Wisconsin\']'
+Score += 0
+
+Problem 6 (10 points):
+rank_actors(epsilon=0.85) failed (printing first 20 ranks)
+	Correct response: "['Leonardo DiCaprio', 'Robert De Niro', 'Tom Hanks', 'Al Pacino', 'Christian Bale', 'Jamie Foxx', 'Ben Kingsley', 'Christoph Waltz', 'Morgan Freeman', 'Tom Hardy', 'Ralph Fiennes', 'Matt Damon', 'Harrison Ford', 'Gary Oldman', 'Liam Neeson', 'Clint Eastwood', 'Brad Pitt', 'Kevin Spacey', 'Ryan Gosling', 'James Stewart']"
+	Student response: "['Leonardo DiCaprio', 'Robert De Niro', 'Tom Hanks', 'Al Pacino', 'Jamie Foxx', 'Christian Bale', 'Ben Kingsley', 'Morgan Freeman', 'Christoph Waltz', 'Ralph Fiennes', 'Matt Damon', 'Tom Hardy', 'Liam Neeson', 'Gary Oldman', 'Harrison Ford', 'Brad Pitt', 'Clint Eastwood', 'Kevin Spacey', 'Ryan Gosling', 'Michael Caine']"
+Score += 0
+
+Code Quality (5 points):
+no comments in digraph.itersolve
+Score += 3
+
+Total score: 24/50 = 48.0%
+
+-------------------------------------------------------------------------------
+
+03/15/22 11:56
+
+Problems 1-2 (15 points):
+Score += 15
+
+Problem 3 (5 points):
+Score += 5
+
+Problem 4 (5 points):
+rank_websites(epsilon=0.93) failed (printing first 20 ranks)
+	Correct response: "['98595', '32791', '28392', '77323', '92715', '26083', '130094', '99464', '12846', '106064', '332', '31328', '86049', '123900', '74923', '119538', '90571', '116900', '139197', '114623']"
+	Student response: "['98595', '32791', '28392', '77323', '92715', '26083', '130094', '99464', '12846', '106064', '332', '31328', '86049', '123900', '74923', '90571', '119538', '116900', '139197', '114623']"
+Score += 4
+
+Problem 5 (10 points):
+Score += 10
+
+Problem 6 (10 points):
+Score += 10
+
+Code Quality (5 points):
+Score += 5
+
+Total score: 49/50 = 98.0%
+
+Excellent!
+
+-------------------------------------------------------------------------------
+

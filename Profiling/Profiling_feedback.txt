@@ -1,0 +1,170 @@
+01/10/22 10:44
+
+Problem 1 (5 points):
+max_path_fast('triangle.txt'):
+	Solution time: 0.002150774002 seconds
+	Student time:  0.000946044922 seconds (Excellent!)
+max_path_fast('triangle_large.txt'):
+	Solution time: 0.005036592484 seconds
+	Student time:  0.003725528717 seconds (Excellent!)
+Score += 5
+
+Problem 2 (10 points):
+primes_fast(100):
+	Solution time: 0.000131130219 seconds
+	Student time:  0.000333786011 seconds
+primes_fast(10001):
+	Solution time: 0.079117298126 seconds
+	Student time:  0.088019371033 seconds
+Score += 9
+
+Problem 3 (5 points):
+nearest_column_fast(), 10x15 A:
+	Solution time: 0.000071525574 seconds
+	Student time:  0.000026702881 seconds (Excellent!)
+nearest_column_fast(), 1000x1005 A:
+	Solution time: 0.003564357758 seconds
+	Student time:  0.003229856491 seconds (Excellent!)
+Score += 5
+
+Problem 4 (5 points):
+name_scores_fast():
+	Solution time: 0.005202770233 seconds
+	Student time:  0.003577470779 seconds (Excellent!)
+Score += 5
+
+Problem 5 (5 points):
+NotImplementedError: Problem 5 Incomplete
+
+Problem 6 (10 points):
+prime_sieve() is not a generator!
+Score += 0
+
+Problem 7 (5 points):
+TypeError: Invalid return type 'NoneType'
+
+Code Quality (5 points):
+add comment to every code block
+Score += 3
+
+Total score: 27/50 = 54.0%
+
+
+Comments:
+	the larger primes trial was OK.  the smaller will be OK on the real grade
+
+-------------------------------------------------------------------------------
+
+01/10/22 20:47
+
+Problem 1 (5 points):
+max_path_fast('triangle.txt'):
+	Solution time: 0.001675128937 seconds
+	Student time:  0.000870704651 seconds (Excellent!)
+max_path_fast('triangle_large.txt'):
+	Solution time: 0.004592657089 seconds
+	Student time:  0.003776311874 seconds (Excellent!)
+Score += 5
+
+Problem 2 (10 points):
+primes_fast(100):
+	Solution time: 0.000147104263 seconds
+	Student time:  0.000169754028 seconds
+primes_fast(10001):
+	Solution time: 0.135308265686 seconds
+	Student time:  0.082281827927 seconds (Excellent!)
+Score += 9
+
+Problem 3 (5 points):
+nearest_column_fast(), 10x15 A:
+	Solution time: 0.000055789948 seconds
+	Student time:  0.000028848648 seconds (Excellent!)
+nearest_column_fast(), 1000x1005 A:
+	Solution time: 0.006052732468 seconds
+	Student time:  0.005202054977 seconds (Excellent!)
+Score += 5
+
+Problem 4 (5 points):
+name_scores_fast():
+	Solution time: 0.009191751480 seconds
+	Student time:  0.004368066788 seconds (Excellent!)
+Score += 5
+
+Problem 5 (5 points):
+Score += 5
+
+Problem 6 (10 points):
+list(prime_sieve(100000)):
+	Solution time: 2.160156250000 seconds
+	Student time:  0.468374967575 seconds (Excellent!)
+Score += 10
+
+Problem 7 (5 points):
+(my fault)  on this soft grade I ssh'd into the lab machine and couldn't see the output graph.  Ill slack you the correct graph so you can compare
+Score += 0
+
+Code Quality (5 points):
+comment in EVERY function
+Score += 3
+
+Total score: 42/50 = 84.0%
+
+-------------------------------------------------------------------------------
+
+01/11/22 15:54
+
+Problem 1 (5 points):
+max_path_fast('triangle.txt'):
+	Solution time: 0.002004384995 seconds
+	Student time:  0.000703334808 seconds (Excellent!)
+max_path_fast('triangle_large.txt'):
+	Solution time: 0.004744529724 seconds
+	Student time:  0.003347396851 seconds (Excellent!)
+Score += 5
+
+Problem 2 (10 points):
+primes_fast(100):
+	Solution time: 0.000146150589 seconds
+	Student time:  0.000153303146 seconds
+primes_fast(10001):
+	Solution time: 0.050195455551 seconds
+	Student time:  0.050304412842 seconds
+Score += 10
+
+Problem 3 (5 points):
+nearest_column_fast(), 10x15 A:
+	Solution time: 0.000080108643 seconds
+	Student time:  0.000025272369 seconds (Excellent!)
+nearest_column_fast(), 1000x1005 A:
+	Solution time: 0.004442453384 seconds
+	Student time:  0.004204988480 seconds (Excellent!)
+Score += 5
+
+Problem 4 (5 points):
+name_scores_fast():
+	Solution time: 0.009180068970 seconds
+	Student time:  0.004623651505 seconds (Excellent!)
+Score += 5
+
+Problem 5 (5 points):
+Score += 5
+
+Problem 6 (10 points):
+list(prime_sieve(100000)):
+	Solution time: 2.235726118088 seconds
+	Student time:  0.483753442764 seconds (Excellent!)
+Score += 10
+
+Problem 7 (5 points):
+Score += 5
+
+Code Quality (5 points):
+need to comment in every code block
+Score += 4
+
+Total score: 49/50 = 98.0%
+
+Excellent!
+
+-------------------------------------------------------------------------------
+
